@@ -44,5 +44,11 @@ namespace Sitema2
         {
 
         }
+
+        private void buttonGerenciarCarros_Click(object sender, EventArgs e)
+        {
+            GerenciamentoCarros form = new GerenciamentoCarros();
+            form.ShowDialog();
+        }
     }
 }

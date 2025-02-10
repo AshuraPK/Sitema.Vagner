@@ -53,7 +53,7 @@ namespace Sitema2
                 maskedTextBoxCPF.Focus();
             }
 
-            //Defuna sua string de conexão com o banco
+            //DefIna sua string de conexão com o banco
             string conexaoString = "Server=localhost; Port=3306; Database=bd_sistema; Uid=root; Pwd=;";
 
             //defina a inserção de registro no BD

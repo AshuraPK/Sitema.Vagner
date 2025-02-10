@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -93,11 +94,56 @@ namespace Sitema2
                 maskedTextBoxCPF.Text = "";
                 maskedTextBoxCPF.Focus();
             }
-        }
 
+            //DefIna sua string de conexão com o banco
+            string conexaoString = "Server=localhost; Port=3306; Database=bd_sistema; Uid=root; Pwd=;";
+
+            //defina a inserção de registro no BD
+
+            string query = "INSERT INTO tb_Carros (Proprietario, Telefone, Cpf, Placa, Modelo, Ano, Chassi, Cor, Marca, Acessorios, Valor) VALUES (@Proprietario, @Telefone, @Cpf, @Placa, @Modelo, @Ano, @Chassi, @Cor, @Marca, @Acessorios, @Valor)";
+
+            // Crie uma conexão com o BD
+
+            using (MySqlConnection conexao = new MySqlConnection(conexaoString))
+            {
+                try
+                {
+                    //Abre a conexão
+                    conexao.Open();
+
+                    //Crie o comando SQL
+                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
+                    {
+                        //Adicionar os parâmetros com os valores dos TexBox
+                        comando.Parameters.AddWithValue("@Proprietario", textBoxProprietario.Text);
+                        comando.Parameters.AddWithValue("@Telefone", maskedTextBoxTelefone.Text);
+                        comando.Parameters.AddWithValue("@Cpf", maskedTextBoxCPF.Text);
+                        comando.Parameters.AddWithValue("@Placa", textBoxPlaca.Text);
+                        comando.Parameters.AddWithValue("@Modelo", textBoxModelo.Text);
+                        comando.Parameters.AddWithValue("@Ano", maskedTextBoxAno.Text);
+                        comando.Parameters.AddWithValue("@Chassi", maskedTextBoxChassi.Text);
+                        comando.Parameters.AddWithValue("@Cor", textBoxCor.Text);
+                        comando.Parameters.AddWithValue("@Marca", textBoxMarca.Text);
+                        comando.Parameters.AddWithValue("@Acessorios", richTextBoxAcessorio.Text);
+                        comando.Parameters.AddWithValue("@Valor", maskedTextBoxValor.Text);
+
+                        // Executa o comando de inserção
+                        comando.ExecuteNonQuery();
+                        MessageBox.Show("Dados inseridos com sucesso!");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // em Caso de erro, exiba mensagem do erro
+                    MessageBox.Show("Erro: " + ex.Message);
+                }
+
+            }
+        }
         private void CadCarros_Load(object sender, EventArgs e)
         {
 
         }
     }
 }
+

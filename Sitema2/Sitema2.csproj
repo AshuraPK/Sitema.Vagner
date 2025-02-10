@@ -125,6 +125,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GerenciamentoCarros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenciamentoCarros.Designer.cs">
+      <DependentUpon>GerenciamentoCarros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciamentoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenciamentoClientes.Designer.cs">
+      <DependentUpon>GerenciamentoClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenciamentoCarros.resx">
+      <DependentUpon>GerenciamentoCarros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenciamentoClientes.resx">
+      <DependentUpon>GerenciamentoClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
