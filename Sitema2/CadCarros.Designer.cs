@@ -256,6 +256,7 @@
             this.textBoxMarca.Name = "textBoxMarca";
             this.textBoxMarca.Size = new System.Drawing.Size(281, 26);
             this.textBoxMarca.TabIndex = 8;
+            this.textBoxMarca.TextChanged += new System.EventHandler(this.textBoxMarca_TextChanged);
             // 
             // label10
             // 

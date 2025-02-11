@@ -54,6 +54,7 @@
             this.buttonFechar.TabIndex = 8;
             this.buttonFechar.Text = "Fechar";
             this.buttonFechar.UseVisualStyleBackColor = true;
+            this.buttonFechar.Click += new System.EventHandler(this.buttonFechar_Click);
             // 
             // buttonRemoverCarros
             // 
@@ -63,6 +64,7 @@
             this.buttonRemoverCarros.TabIndex = 7;
             this.buttonRemoverCarros.Text = "Remover Carros";
             this.buttonRemoverCarros.UseVisualStyleBackColor = true;
+            this.buttonRemoverCarros.Click += new System.EventHandler(this.buttonRemoverCarros_Click);
             // 
             // buttonPequisar
             // 

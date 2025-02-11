@@ -76,7 +76,7 @@
             this.textBoxNomeCompleto.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNomeCompleto.Name = "textBoxNomeCompleto";
             this.textBoxNomeCompleto.Size = new System.Drawing.Size(281, 26);
-            this.textBoxNomeCompleto.TabIndex = 2;
+            this.textBoxNomeCompleto.TabIndex = 1;
             // 
             // label3
             // 
@@ -96,7 +96,7 @@
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(281, 26);
-            this.textBoxEmail.TabIndex = 6;
+            this.textBoxEmail.TabIndex = 3;
             this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
             // 
             // label4
@@ -150,7 +150,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(211, 30);
-            this.button1.TabIndex = 13;
+            this.button1.TabIndex = 7;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -162,7 +162,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(211, 30);
-            this.button2.TabIndex = 14;
+            this.button2.TabIndex = 8;
             this.button2.Text = "Limpar Campos";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -174,7 +174,7 @@
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(211, 30);
-            this.button3.TabIndex = 15;
+            this.button3.TabIndex = 9;
             this.button3.Text = "Fechar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -187,7 +187,7 @@
             this.maskedTextBoxCPF.Mask = "000,000,000-00";
             this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
             this.maskedTextBoxCPF.Size = new System.Drawing.Size(281, 26);
-            this.maskedTextBoxCPF.TabIndex = 17;
+            this.maskedTextBoxCPF.TabIndex = 2;
             // 
             // maskedTextBoxTelefone
             // 
@@ -197,7 +197,7 @@
             this.maskedTextBoxTelefone.Mask = "(99) 00000-0000";
             this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
             this.maskedTextBoxTelefone.Size = new System.Drawing.Size(281, 26);
-            this.maskedTextBoxTelefone.TabIndex = 19;
+            this.maskedTextBoxTelefone.TabIndex = 6;
             // 
             // maskedTextBoxCEP
             // 
@@ -207,7 +207,7 @@
             this.maskedTextBoxCEP.Mask = "00000-999";
             this.maskedTextBoxCEP.Name = "maskedTextBoxCEP";
             this.maskedTextBoxCEP.Size = new System.Drawing.Size(281, 26);
-            this.maskedTextBoxCEP.TabIndex = 18;
+            this.maskedTextBoxCEP.TabIndex = 4;
             // 
             // maskedTextBoxNumero
             // 
@@ -217,7 +217,7 @@
             this.maskedTextBoxNumero.Mask = "000000";
             this.maskedTextBoxNumero.Name = "maskedTextBoxNumero";
             this.maskedTextBoxNumero.Size = new System.Drawing.Size(281, 26);
-            this.maskedTextBoxNumero.TabIndex = 20;
+            this.maskedTextBoxNumero.TabIndex = 5;
             this.maskedTextBoxNumero.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBoxNumero_MaskInputRejected);
             // 
             // labelAlert

@@ -62,15 +62,17 @@
             this.buttonRemoverClientes.TabIndex = 2;
             this.buttonRemoverClientes.Text = "Remover Cientes";
             this.buttonRemoverClientes.UseVisualStyleBackColor = true;
+            this.buttonRemoverClientes.Click += new System.EventHandler(this.buttonRemoverClientes_Click);
             // 
             // buttonFechar
             // 
-            this.buttonFechar.Location = new System.Drawing.Point(618, 348);
+            this.buttonFechar.Location = new System.Drawing.Point(618, 320);
             this.buttonFechar.Name = "buttonFechar";
             this.buttonFechar.Size = new System.Drawing.Size(108, 49);
             this.buttonFechar.TabIndex = 3;
             this.buttonFechar.Text = "Fechar";
             this.buttonFechar.UseVisualStyleBackColor = true;
+            this.buttonFechar.Click += new System.EventHandler(this.buttonFechar_Click);
             // 
             // label1
             // 

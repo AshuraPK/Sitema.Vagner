@@ -144,6 +144,11 @@ namespace Sitema2
         {
 
         }
+
+        private void textBoxMarca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

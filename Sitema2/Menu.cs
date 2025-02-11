@@ -30,7 +30,7 @@ namespace Sitema2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ConsultaCliente form = new ConsultaCliente();
+            GerenciamentoClientes form = new GerenciamentoClientes();
             form.ShowDialog();
         }
 

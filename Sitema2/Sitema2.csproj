@@ -113,12 +113,6 @@
     <Compile Include="CadClientes.Designer.cs">
       <DependentUpon>CadClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConsultaCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConsultaCliente.Designer.cs">
-      <DependentUpon>ConsultaCliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,9 +144,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadClientes.resx">
       <DependentUpon>CadClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConsultaCliente.resx">
-      <DependentUpon>ConsultaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
